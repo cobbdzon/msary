@@ -1,0 +1,154 @@
+@import url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/fonts/ldfcomicsans/stylesheet.css);
+@font-face {
+  font-family: "Darling";
+  font-style: normal;
+  src: url(https://cdn.jsdelivr.net/gh/aritmatica/cdn@main/fonts/Darling.ttf) format("truetype"); }
+* {
+  margin: 0;
+  padding: 0;
+  color-scheme: light;
+  box-sizing: border-box;
+  font-family: ldfcomicsans-medium, arial, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ff91a4; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem; }
+
+body {
+  background-image: linear-gradient(#fbdade, #ffc2c9);
+  height: 100%;
+  padding-bottom: 256px; }
+  body section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50vh;
+    gap: 8px;
+    width: 100%; }
+    body section .heart-cat1 {
+      height: 50vh; }
+    body section .heart-cat2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), white); }
+    body section h1 {
+      font-family: ldfcomicsans-bold, arial, sans-serif;
+      font-size: max(3vw, 36px);
+      text-align: center;
+      padding-inline: 8px; }
+    body section h2 {
+      text-align: center; }
+    body section .encrypted {
+      color: black;
+      word-break: break-all;
+      padding-inline: 2vw; }
+      body section .encrypted[encrypted=false] {
+        word-break: normal;
+        font-size: larger; }
+    body section form {
+      display: flex;
+      flex-direction: column; }
+
+#welcome {
+  height: 90vh; }
+
+#falling-flowers {
+  position: sticky;
+  z-index: -1; }
+  #falling-flowers .flower {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-shake;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out; }
+    #falling-flowers .flower .inner {
+      animation-duration: 8s;
+      animation-name: snowflakes-fall;
+      animation-timing-function: linear;
+      width: 48px; }
+    #falling-flowers .flower:nth-of-type(0) {
+      left: 1%;
+      animation-delay: 0s; }
+    #falling-flowers .flower:nth-of-type(0) .inner {
+      animation-delay: 0s; }
+    #falling-flowers .flower:first-of-type {
+      left: 10%;
+      animation-delay: 1s; }
+    #falling-flowers .flower:first-of-type .inner, #falling-flowers .flower:nth-of-type(8) .inner {
+      animation-delay: 1s; }
+    #falling-flowers .flower:nth-of-type(2) {
+      left: 20%;
+      animation-delay: 0.5s; }
+    #falling-flowers .flower:nth-of-type(2) .inner, #falling-flowers .flower:nth-of-type(6) .inner {
+      animation-delay: 6s; }
+    #falling-flowers .flower:nth-of-type(3) {
+      left: 30%;
+      animation-delay: 2s; }
+    #falling-flowers .flower:nth-of-type(11) .inner, #falling-flowers .flower:nth-of-type(3) .inner {
+      animation-delay: 4s; }
+    #falling-flowers .flower:nth-of-type(4) {
+      left: 40%;
+      animation-delay: 2s; }
+    #falling-flowers .flower:nth-of-type(10) .inner, #falling-flowers .flower:nth-of-type(4) .inner {
+      animation-delay: 2s; }
+    #falling-flowers .flower:nth-of-type(5) {
+      left: 50%;
+      animation-delay: 3s; }
+    #falling-flowers .flower:nth-of-type(5) .inner {
+      animation-delay: 8s; }
+    #falling-flowers .flower:nth-of-type(6) {
+      left: 60%;
+      animation-delay: 2s; }
+    #falling-flowers .flower:nth-of-type(7) {
+      left: 70%;
+      animation-delay: 1s; }
+    #falling-flowers .flower:nth-of-type(7) .inner {
+      animation-delay: 2.5s; }
+    #falling-flowers .flower:nth-of-type(8) {
+      left: 80%;
+      animation-delay: 0s; }
+    #falling-flowers .flower:nth-of-type(9) {
+      left: 90%;
+      animation-delay: 1.5s; }
+    #falling-flowers .flower:nth-of-type(9) .inner {
+      animation-delay: 3s; }
+    #falling-flowers .flower:nth-of-type(10) {
+      left: 25%;
+      animation-delay: 0s; }
+    #falling-flowers .flower:nth-of-type(11) {
+      left: 65%;
+      animation-delay: 2.5s; }
+  #falling-flowers .flower,
+  #falling-flowers .flower .inner {
+    animation-iteration-count: infinite;
+    animation-play-state: running; }
+
+@keyframes snowflakes-fall {
+  0% {
+    transform: translateY(0);
+    transform: rotate(10deg); }
+  100% {
+    transform: translateY(110vh); } }
+@keyframes snowflakes-shake {
+  0%,
+	100% {
+    transform: translateX(0);
+    transform: rotate(-1deg); }
+  50% {
+    transform: translateX(80px);
+    transform: rotate(1deg); } }
+
+/*# sourceMappingURL=main.css.map */
